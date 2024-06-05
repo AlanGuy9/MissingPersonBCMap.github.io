@@ -1,0 +1,142 @@
+﻿body {
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('forest3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+header {
+    width: 100%;
+    background: rgba(93, 94, 89, 0.5);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+#map-container {
+    width: 70%;
+}
+
+#index-box {
+    width: 20%;
+    max-height: 80vh; /* Adjust to fit the viewport */
+    margin-left: 20px;
+    padding: 10px;
+    background: rgba(238, 238, 238, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: hidden; /* Remove scrolling */
+    display: flex;
+    flex-direction: column;
+}
+
+    #index-box h2 {
+        margin-top: 0;
+    }
+
+    #index-box button {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 5px;
+        font-size: 0.9em;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    #index-box #user-message {
+        margin-top: 20px;
+        padding: 5px;
+        border-radius: 0;
+        border: none;
+        background-color: transparent;
+        box-shadow: none;
+        color: #333;
+        font-size: 0.9em;
+    }
+
+.custom-div-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 12px;
+}
+
+#map {
+    width: 100%;
+    height: 80vh;
+    border: 4px solid #516482;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#age-filter {
+    margin-top: 20px;
+}
+
+    #age-filter .age-input-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #age-filter label, #age-filter input {
+        width: 48%;
+    }
+
+    #age-filter button {
+        width: 100%;
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+#last-updated {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 0.9em;
+    color: #333;
+}
+
+#gender-filter {
+    margin-top: 20px;
+}
+
+    #gender-filter button {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        margin-top: 5px;
+        font-size: 0.9em;
+        cursor: pointer;
+        border-radius: 5px;
+    }

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BC-CAMP</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>B.C. Crime And Missing Persons</h1>
+    </header>
+    <main>
+        <div id="map-container">
+            <div id="map"></div>
+        </div>
+        <div id="index-box">
+            <h2>Features</h2>
+            <button id="show-all">Show All</button>
+            <button id="show-homicide">Homicide</button>
+            <button id="show-missing">Missing</button>
+            <div id="age-filter">
+                <h2>Filter by Age</h2>
+                <div class="age-input-container">
+                    <div>
+                        <label for="min-age">Min Age:</label>
+                        <input type="number" id="min-age" name="min-age">
+                    </div>
+                    <div>
+                        <label for="max-age">Max Age:</label>
+                        <input type="number" id="max-age" name="max-age">
+                    </div>
+                </div>
+                <button id="filter-age">Filter</button>
+            </div>
+            <div id="gender-filter">
+                <h2>Filter by Gender</h2>
+                <button id="filter-all-gender">All</button>
+                <button id="filter-female">Female</button>
+                <button id="filter-male">Male</button>
+                <button id="filter-trans">Trans</button>
+            </div>
+            <div id="user-message">This Website was made by one person, any info should be directed toward the local authorities. I will update this website when I have time and the exact last location of individuals may not always be perfect. Thank you. </div>
+        </div>
+    </main>
+    <div id="last-updated">Last updated: <span id="last-updated-date">June 04, 2024</span></div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
